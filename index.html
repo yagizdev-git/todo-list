@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TO-DO List</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="img/todo-icon.png" type="image/x-icon">
+</head>
+<body>
+  <div id="container">
+    <header id="todo-header">
+      <h3 id="todo-list-sayfasi-text">
+        ToDo List Sayfası
+      </h3>
+    </header>
+    <div id="todo-ekle">
+      <form id="addTodoForm">
+        <input id="todo-ekle-input" type="text" placeholder="ToDo ekleyiniz...">
+        <button id="todo-ekle-btn" type="submit">
+          ToDo Ekle
+        </button>
+        <hr class="kisa">
+        <div id="warningMessage-div">
+        </div>
+      </form>
+    </div>
+    <div id="todo-listesi">
+      <hr class="uzun">
+      <h3 id="todo-listesi-text">ToDo Listesi</h3>
+      <input type="text" id="todo-arama" placeholder="ToDo arayınız...">
+      <hr class="kisa">
+    </div>
+    <div id="todolar">
+      <ul class="list-group">
+        <!-- <li class="list-group-item">
+          as<button class="close-btn close-btn-js">✘</button>
+        </li> -->
+      </ul>
+    </div>
+    <footer id="tum-todolari-temizle">
+      <button id="todo-temizle">
+        Tüm ToDo'ları Temizle
+      </button>
+    </footer>
+  </div> 
+
+  <script src="app.js"></script>
+  </body>
+  </html>
